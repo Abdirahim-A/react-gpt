@@ -2,11 +2,12 @@
 import glob
 from pathlib import Path
 from langchain.document_loaders import DirectoryLoader
+from langchain.document_loaders import TextLoader
 
 print(glob.glob("./reactjs.org/beta/src/content/**/*.md"))
 
 if __name__ == "__main__":
-    loader = DirectoryLoader("./reactjs.org/beta/src/content/", glob="**/*.md")
+    loader = DirectoryLoader("./docs", glob="**/*.md", loader_cls=TextLoader)
     raw_documents = loader.load()
     print(len(raw_documents))
     dir_path = Path("ingested_data")
