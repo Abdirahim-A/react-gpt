@@ -1,5 +1,4 @@
 .main {
-  background: #23272f;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,32 +13,6 @@
 .logoContainer {
   display: flex;
   align-items: center;
-}
-
-.topnav {
-  background: #23272f;
-  border-bottom: 1px solid #30373d;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 0.75rem 1rem 0.75rem;
-  align-items: center;
-}
-
-.navlogo,
-.navlinks a {
-  font-weight: 500;
-}
-
-.navlogo {
-  font-size: 1.25rem;
-  margin-left: 24px;
-}
-
-.navlinks {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-right: 24px;
 }
 
 .apptitle {
@@ -69,9 +42,8 @@
   padding: 1rem 2rem 1rem 2rem;
   width: 75vw;
   border-radius: 0.5rem;
-  border: 1px solid #30373d;
-  background: #000;
-  color: white;
+  border: 1px solid #e1e1e1;
+  background: #fff;
   outline: none;
 }
 
@@ -108,7 +80,6 @@
 }
 
 .generatebutton:hover {
-  background: #1f2227;
   border-radius: 0.2rem;
 }
 
@@ -133,15 +104,15 @@
 }
 
 .usermessage {
-  background: #070809;
+  background: #fff;
   padding: 1.5rem;
-  color: #ececf1;
+  color: #000;
 }
 
 .usermessagewaiting {
   padding: 1.5rem;
-  color: #ececf1;
-  background: linear-gradient(to left, #070809, #1a1c20, #070809);
+  color: #000;
+  background: linear-gradient(to left, #e6e6e6, #e8e8e8, #e6e6e6);
   background-size: 200% 200%;
   background-position: -100% 0;
   animation: loading-gradient 2s ease-in-out infinite;
@@ -159,9 +130,9 @@
 }
 
 .apimessage {
-  background: #141619;
+  background: #f2f2f2;
   padding: 1.5rem;
-  color: #ececf1;
+  color: #000;
   animation: fadein 0.5s;
 }
 
@@ -194,8 +165,7 @@
 }
 
 .markdownanswer code {
-  background-color: rgba(153, 161, 179, 0.1);
-  color: rgb(235, 236, 240);
+  color:#000;
   font-weight: 500;
   white-space: pre-wrap !important;
 }
@@ -228,10 +198,9 @@
 
 .cloud {
   width: 75vw;
-  height: 65vh;
-  background: #070809;
+  height: 75vh;
   border-radius: 0.5rem;
-  border: 1px solid #30373d;
+  border: 1px solid #e1e1e1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,7 +218,8 @@
 }
 
 .footer {
-  color: #5f6368;
+  display: none;
+  color: #fff;
   font-size: 0.8rem;
   margin: 1.5rem;
 }
